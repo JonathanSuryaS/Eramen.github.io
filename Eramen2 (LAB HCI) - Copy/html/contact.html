@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="..//css/stylecontact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="..//javascript/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karma&family=Kite+One&family=Kiwi+Maru&family=Lexend+Deca&family=Mate+SC&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <a href="home.html">ERAMEN</a>
+        </div>
+        <input type="checkbox" id="navbar" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="product.html">Products</a>
+                </li>
+                <li>
+                    <a href="promotion.html">Promotion</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About us</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="navbar" class="dropdown">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </header>
+    <main>
+        <section>
+            <div class="getintouch">
+                <div class="getintouchTitle">
+                    <div class="getintouchHeader">
+                        <h1>GET IN TOUCH</h1>
+                    </div>
+                </div>
+                <div class="getintouchbody">
+                    <div class="address">
+                        <div class="addressicon">
+                            <p><i class="fa-sharp fa-solid fa-location-dot"></i></p>
+                        </div>
+                        <div class="adddresstitle">
+                            <h2>ADDRESS</h2>
+                        </div>
+                        <div class="addressdesc">
+                            <p>4, Pemuda Street, No.Kav.3, RW.7, Rawamangun, Pulo Gadung Sub-district, Special Capital
+                                Region of Jakarta 13220.</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contacticon">
+                            <p><i class="fa-solid fa-address-book"></i></p>
+                        </div>
+                        <div class="contacttitle">
+                            <h2>CONTACT</h2>
+                        </div>
+                        <div class="contactdesc">
+                            <ul>
+                                <li>Phone: (021) 4711652</li>
+                                <li>FAX: 01-2222 8888</li>
+                                <li>Email: ERamen@business.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="messageUs">
+                <div class="messageUsTitle">
+                    <h1>MESSAGE US</h1>
+                </div>
+                <div class="input">
+                    <form action="" method="GET" id="form">
+                        <div class="username">
+                            <input type="text" name="usernames" class="inputBox" required="required"
+                                placeholder="Full name" id="usernames">
+                        </div>
+                        <div class="emailInput">
+                            <input type="email" name="emails" class="inputBox" required="required" placeholder="Email"
+                                id="emails">
+                        </div>
+                        <div class="phoneInput">
+                            <input type="text" name="phonenumbers" class="inputBox" required="required"
+                                placeholder="Phone number" id="phonenumbers">
+                        </div>
+                        <div class="discussion">
+                            <textarea name="discussions" class="messageBox" cols="30" rows="10"
+                                placeholder="What would you like to discuss?" id="discussions"></textarea>
+                        </div>
+                        <div class="preference">
+                            <div class="preferenceTitle">
+                                <h3>Preference</h3>
+                            </div>
+                            <div class="choice">
+                                <div class="dryramen">
+                                    <div class="dryramenImage">
+                                        <img src="..//images/d14b168b-700c-48e6-8b6b-3f09d1068886-removebg-preview.png"
+                                            alt="dry ramen images">
+                                    </div>
+                                    <div class="dryramenbutton">
+                                        <input type="radio" name="ramenchoice" id="dryramen" class="ramenRadio">
+                                    </div>
+                                    <div class="dryramentitle">
+                                        <h4>Dry Ramen</h4>
+                                    </div>
+                                </div>
+                                <div class="ramen">
+                                    <div class="ramenImage">
+                                        <img src="..//images/Tonkotsu-Ramen-FT-BLOG1122-8fe6c12d609a4fd4ab246bea3aae140e-removebg-preview.png"
+                                            alt="ramen">
+                                    </div>
+                                    <div class="ramenbutton">
+                                        <input type="radio" name="ramenchoice" id="ramen" class="ramenRadio">
+                                    </div>
+                                    <div class="ramentitle">
+                                        <h4>Ramen</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsletter">
+                            <input type="checkbox" name="agree" class="agree" id="agree">
+                            <p>Subscribe to our newsletter</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="submitButton">
+                    <button type="button" onclick="submit()" class="submitButtons">Submit</button>
+                    <p class="succes"></p>
+                </div>
+                <div class="errormsg">
+                    <h3 id="error"></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="col">
+            <div class="main-footer">
+                <div class="leftFooter">
+                    <div class="title">
+                        <h3>ERAMEN</h3>
+                    </div>
+                    <div class="icon">
+                        <div class="desc">
+                            <h4>Follow Us</h4>
+                        </div>
+                        <div class="icons">
+                            <p class="facebookIcons"><i class="fa-brands fa-square-facebook"></i></p>
+                            <p class="instagranIcons"><i class="fa-brands fa-instagram"></i></p>
+                            <p class="twitterIcons"><i class="fa-brands fa-twitter"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerFooter">
+                    <div class="title">
+                        <h3>Site Links</h3>
+                    </div>
+                    <div class="listlinks">
+                        <div class="listLink1">
+                            <ul>
+                                <li>Contact Us</li>
+                                <li>About Us</li>
+                                <li>Direction</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+                        <div class="listLink2">
+                            <ul>
+                                <li>Promotion</li>
+                                <li>Partners</li>
+                                <li>Careers</li>
+                                <li>FAQs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightFooter">
+                    <div class="title">
+                        <h3>Receive the lattest news by</h3>
+                    </div>
+                    <div class="button">
+                        <div class="text">
+                            <h4>TEXT</h4>
+                        </div>
+                        <div class="email">
+                            <h4>EMAIL</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

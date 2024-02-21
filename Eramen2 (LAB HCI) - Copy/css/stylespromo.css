@@ -1,0 +1,1010 @@
+/* Desktop */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Kameron', serif;
+    background-color: #0F1416;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background: #A40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.title a{
+    text-decoration: none;
+    color: #FFC700;
+    font-size: 4em;
+    font-family: 'Mate SC', serif;
+
+}
+
+nav ul {
+    display: flex;
+   
+}
+nav ul li a {
+    font-family: 'Karma', serif;
+    color: #FFC700;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-size: 2em;
+}
+
+
+nav ul li a:hover {
+    background: black;
+}
+nav ul li a.active {
+    color:white;
+    background-color: #FFC700;
+}
+.dropdown {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.dropdown:hover {
+    color: white;
+    background-color: #FFC700;
+}
+.dropdown .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+footer {
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 0.2s;
+    margin-top: 15%;
+    height: 30em;
+    background-color: #450B0B;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5sem;
+    gap: 12%;
+}
+
+.leftFooter {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.leftFooter h3 {
+    font-family: 'Mate SC', serif;
+    color: white;
+    font-size: 5em;
+}
+
+.icon {
+    margin-top: 13%;
+    gap: 5%;
+}
+
+.icon .desc {
+    margin-bottom: 7%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.leftFooter h4 {
+    color: white;
+    font-size: 2.4em;
+}
+
+.centerFooter {
+    margin-top: 5.5%;
+}
+
+.centerFooter .title {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 10%;
+    font-size: 3em;
+    color: white;
+}
+
+.listlinks {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+    gap: 3em;
+    font-size: 2em;
+    line-height: 170%;
+}
+
+.listlinks li {
+    font-family: mate;
+    list-style: none;
+}
+
+.listlinks li:hover, .listlinks li:active{
+    color: white;
+}
+
+.rightFooter {
+    margin-top: 15%;
+}
+
+.rightFooter .title {
+    font-size: 2em;
+    color: white;
+}
+
+.rightFooter .button {
+    margin-left: 3%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 9%;
+}
+
+.rightFooter .button .text h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .text {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.rightFooter .button .email h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .email {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.icons {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.rightFooter .button .text h4:hover, .rightFooter .button .email h4:hover, .rightFooter .button .text h4:active, .rightFooter .button .email h4:active {
+    color: #FFC700;
+    background-color: black;
+}
+
+/* MAIN BODY */
+
+.promotionBanner {
+    transition: 0.2s;
+    margin-top: 20%;
+    background-color: #A01414;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    border-radius: 50px;
+  
+}
+
+.todayspecial h1 {
+    font-family: 'Kalam', cursive;
+    font-size: 500%;
+    width: 99%;
+    color: #FFF500;
+    margin-left: 5%;
+    margin-top: 1%;
+    line-height: 160%;
+}
+
+.promotionBanner img {
+    width: 90%;
+    margin: auto;
+    margin-left: 20%;
+}
+
+
+.discount h2 {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    width: 70%;
+    margin-left: 18%;
+}
+
+.discount {
+    margin-left: 3%;
+    color: white;
+}
+
+.discount p {
+    font-family: 'Kameron', serif;
+    text-align: center;
+    font-size: 250%;
+    margin-left: 7%;
+}
+
+.bannerImages{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding: 6%;
+}
+
+.bannerDiscount{
+    transition: 0.2s;
+    margin-top: 10%;
+    background-color: rgb(162, 150, 255);
+    border-radius: 50px;
+}
+
+.oneImage{
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.banner1{
+    margin-left: 5%;
+}
+
+.banner1 img{
+    width: 70%;
+    height: 100%;
+}
+
+.banner2, .banner3{
+    width: 90%;
+    height: 50%;
+}
+
+
+
+.ramenMania {
+    transition: 0.2s;
+    margin-top: 15%;
+    background-color: #275F00;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+.ramenManiaTitle {
+    text-align: center;
+    color: white;
+}
+
+.ramenManiaTitle h1 {
+    font-size: 500%;
+}
+
+.ramenManiaTitle h3 {
+    font-size: 300%;
+    margin-top: 3%;
+}
+
+.ramenMania .images {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 10%;
+    color: white;
+}
+
+.tantanRamen img {
+    margin-top: 7%;
+    margin-bottom: -7%;
+    width: 100%;
+}
+
+.porkShoyuRamen img {
+    width: 105%;
+    margin-top: 25%;
+    margin-bottom: 1.5%;
+}
+
+.porkShoyuRamen {
+    margin-left: 1%;
+}
+
+.chickenRamen img {
+    margin-top: 40%;
+    margin-bottom: 9%;
+    width: 70%;
+}
+
+.ramenMania .promotion {
+    color: white;
+    background-color: #BF0000;
+    border-radius: 20px;
+    padding: 3%;
+    width: 70%;
+    align-content: center;
+    margin: auto;
+}
+
+.titlePromotion {
+    text-align: left;
+    font-size: 200%;
+    margin-bottom: 4%;
+}
+
+.promotionDesc {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+}
+
+.listRamen ul li {
+    font-size: 185%;
+    line-height: 150%;
+}
+
+.price h1 {
+    background-color: rh;
+    text-align: center;
+    font-size: 300%;
+}
+
+.price {
+    background-color: #FF9900;
+    padding: 4%;
+    border-radius: 40px;
+}
+
+.promo2{
+    gap: 5%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cashbackovo{
+    width: 50%;
+}
+
+.cashbackdana{
+    width: 50%;
+}
+
+.combo {
+    transition: 0.2s;
+    padding: 70px;
+    margin-top: 15%;
+    background-color: #FFC37C;
+    border-radius: 50px;
+    margin-bottom: 15%;
+}
+
+.titlecombo h1 {
+    text-align: center;
+    color: white;
+    font-size: 400%;
+    margin-bottom: 5%;
+}
+
+.comboBody {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.comboBody .images {
+    display: flex;
+    flex-direction: column;
+}
+
+.keterangan {
+    transition: 0.2s;
+    margin-top: 3%;
+    padding: 7%;
+    background-color: white;
+    border-radius: 30px;
+    height: 30%;
+}
+
+.titleKeterangan {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 30%;
+}
+
+.chickenramencombo img {
+    width: 70%;
+    margin-left: 11%;
+}
+
+.chickenKarage img {
+    width: 100%;
+}
+
+.listKeterangan ul li {
+    font-size: 220%;
+    line-height: 230%;
+}
+
+.listKeterangan {
+    margin-bottom: 40%;
+}
+
+.keteranganHarga {
+    background-color: #FFB800;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.keteranganHarga p {
+    text-align: center;
+    font-size: 300%;
+    color: white;
+}
+
+.partnertitle {
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    margin-bottom: 2%;
+}
+
+.imagepartner img {
+    width: 100%;
+}
+
+
+
+.ourpartnerTitle {
+    padding: 5%;
+    font-family: 'Kaushan Script', cursive;
+    background-color: #A30707;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.ourpartner {
+    border-radius: 30px 30px 30px 30px;
+    background-color: white;
+    margin-top: 10%;
+}
+
+.ourpartnerImages {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4%;
+    padding: 8%;
+}
+
+.dana {
+    width: 40%;
+}
+
+.ovo {
+    width: 25%;
+}
+
+.gojek {
+    width: 25%;
+}
+
+.icons {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+/* Phone */
+@media only screen  and (max-width: 768px) {
+    header {
+        position: static;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 0.8em;
+    }
+    
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #0F1416;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+    #navbar:checked ~ nav {
+        left: 0;
+    }
+   
+    nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    .dropdown {
+        display: block;
+    }
+
+
+
+    footer {
+        padding: 4%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+
+    .leftFooter h3 {
+        font-size: 2em;
+    }
+
+    .leftFooter h4 {
+        font-size: 2em;
+    }
+
+    .centerFooter h3 {
+        font-size: 0.4em;
+    }
+
+    .centerFooter {
+        margin-left: 5%;
+    }
+
+    .listlinks li {
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3 {
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter,
+    .leftFooter,
+    .centerFooter {
+        overflow: hidden;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 20%;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+
+    .rightFooter .button {
+        width: 10em;
+        margin-left: 5%;
+    }
+
+    .promotionBanner {
+        padding: 9%;
+        margin-top: 15%;
+        flex-direction: column;
+    }
+
+    .todayspecial h1 {
+        text-align: center;
+        margin-left: -1%;
+        font-size: 150%;
+        line-height: 160%;
+    }
+
+    .promotionBanner img {
+        margin: auto;
+    }
+
+    .discount h2 {
+        margin: auto;
+        font-size: 130%;
+        text-align: center;
+    }
+
+    .discount p {
+        font-size: 130%;
+        text-align: center;
+    }
+
+    .discount {
+        margin-top: 1%;
+        padding: 10px;
+        margin-bottom: 10%;
+        overflow: hidden;
+    }
+
+    .imgRamen{
+        text-align: center;
+    }
+
+    .discount img {
+        margin: auto;
+        padding: 30%;
+    }
+
+    .discount p {
+        margin: auto;
+    }
+
+
+
+
+    .ramenMania {
+        padding: 10%;
+    }
+
+    .ramenManiaTitle h1 {
+        font-size: 200%;
+    }
+
+    .ramenManiaTitle h3 {
+        font-size: 150%;
+    }
+
+    .ramenMania .images {
+        font-size: 70%;
+    }
+
+    .ramenMania .promotion {
+        padding: 5%;
+    }
+
+    .bannerImages{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .oneImage{
+        width: 105%;
+        margin-left: 5%;
+        text-align: center;
+        gap: 20px;
+    }
+
+
+    .titlePromotion {
+        font-size: 100%;
+    }
+
+    .promotionDesc {
+        flex-wrap: wrap;
+    }
+
+    .listRamen ul li {
+        font-size: 100%;
+        margin-bottom: 7%;
+    }
+
+    .price h1 {
+        font-size: 75%;
+    }
+
+    .price {
+        margin-top: 3%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .comboBody {
+        flex-wrap: wrap;
+    }
+
+    .comboBody .images {
+        flex-direction: row;
+        flex-wrap: initial;
+        margin-bottom: 30%;
+    }
+
+
+    .keterangan {
+        margin: auto;
+        padding: 15%;
+    }
+
+
+
+    .titlecombo h1 {
+        font-size: 200%;
+        margin-bottom: 30%;
+    }
+
+    .titleKeterangan {
+        font-size: 100%;
+        margin-bottom: 6%;
+    }
+
+    .listKeterangan ul li {
+        font-size: 100%;
+    }
+
+    .keteranganHarga p {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .keteranganHarga {
+        margin-top: -20%;
+    }
+
+    .partnertitle {
+        font-size: 125%;
+    }
+
+    .ourpartnerTitle {
+        font-size: 100%;
+    }
+
+    .icons{
+        margin-left: 3%;
+        font-size: 125%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1620px) {
+    nav ul li a{
+        font-size: 1.3em;
+    }
+
+    .leftFooter h3{
+        font-size: 2em;
+    }
+    
+    .leftFooter h4{
+        font-size: 2em;
+    }
+
+    .centerFooter h3{
+        font-size: 0.4em;
+    }
+
+    .listlinks li{
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3{
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter, .leftFooter, .centerFooter{
+        overflow: hidden;
+    }
+
+    .rightFooter{
+        margin-top: 10%;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 8%;
+        flex-direction: row;   
+        margin: auto;
+    }
+
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+    
+
+    footer{
+        height: 20em;
+        overflow: hidden;
+    }
+    
+    .promotionBanner{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .todayspecial h1{
+        text-align: center;
+        margin-bottom: -14%;
+    }
+
+    .discount {
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .discount h2 {
+        margin: auto;
+        font-size: 230%;
+        text-align: center;
+    }
+
+    .discount p {
+        font-size: 230%;
+        text-align: center;
+    }
+
+    .promotionBanner img{
+        margin-left: 0;
+    }
+
+    
+ 
+    .imgRamen{
+        text-align: center;
+        overflow: hidden; 
+        padding: 10%;
+    }
+
+    .imgRamen img{
+        width: 70%;
+    }
+
+    .ramenMania {
+        padding: 10%;
+    }
+
+    .ramenManiaTitle h1 {
+        font-size: 300%;
+    }
+
+    .ramenManiaTitle h3 {
+        font-size: 200%;
+    }
+
+    .ramenMania .images {
+        font-size: 100%;
+    }
+
+    .ramenMania .promotion {
+        padding: 5%;
+    }
+
+    .titlePromotion {
+        font-size: 100%;
+    }
+
+    .promotionDesc {
+        flex-wrap: wrap;
+    }
+
+    .listRamen ul li {
+        font-size: 130%;
+        margin-bottom: 7%;
+    }
+
+    .price h1 {
+        font-size: 100%;
+    }
+
+    .price {
+        margin-top: 3%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .comboBody {
+        flex-wrap: wrap;
+    }
+
+    .comboBody .images {
+        flex-direction: row;
+        flex-wrap: initial;
+        margin-bottom: 10%;
+    }
+
+
+    .keterangan {
+        margin: auto;
+        padding: 15%;
+    }
+
+    .titlecombo h1 {
+        font-size: 300%;
+        margin-bottom: 10%;
+    }
+
+    .keterangan{
+        overflow: hidden;
+    }
+
+    .titleKeterangan {
+        font-size: 200%;
+        margin-bottom: 10%;
+    }
+    .listKeterangan{
+        margin-bottom: 20%;
+    }
+
+    .listKeterangan ul li {
+        font-size: 150%;
+    }
+
+    .keteranganHarga p {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .keteranganHarga {
+        margin-top: 0%;
+    }
+
+    .icons{
+        margin-left: 3%;
+        font-size: 150%;
+    }
+    
+}

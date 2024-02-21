@@ -1,0 +1,818 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0F1416;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background: #A40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.title a{
+    text-decoration: none;
+    color: #FFC700;
+    font-size: 4em;
+    font-family: 'Mate SC', serif;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    font-family: 'Karma', serif;
+    color: #FFC700;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-size: 2em;
+}
+
+
+nav ul li a:hover {
+    background: black;
+}
+nav ul li a.active {
+    -webkit-text-stroke: white;
+    color:white;
+    background-color: #FFC700;
+}
+.dropdown {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.dropdown:hover {
+    color: white;
+    background-color: #FFC700;
+}
+.dropdown .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+
+
+
+.bestRamen{
+    transition: 0.2s;
+    margin-top: 15%;
+}
+
+.bestRamen h1{
+    font-family: 'Kulim Park', sans-serif;
+    text-align: center;
+    font-size: 5em;
+    color: #FFC700;
+}
+
+.bestRamen img{
+    width: 100%;
+}
+
+.featuredRamen{
+    transition: 0.2s;
+}
+
+.titleFeaturedRamen{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #FFC700;
+    margin-top: 4em;
+    font-size: 800%;
+    letter-spacing: 8px;
+}
+
+.featuredRamenPic{
+    font-family: 'Lexend Exa', sans-serif;
+    margin-left: 5em;
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    text-align: center;
+    color: #FFC700;
+}
+.shioRamen img{
+    width: 100%;
+    margin-bottom: 1.2em;
+}
+
+
+.porkShoyu img{
+    width: 120%;
+    margin-bottom: 6%;
+    margin-left: -1em;
+}
+
+.featuredRamenPic h2{
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 3em;
+}
+
+.featuredRamenPic h3{
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 4em;
+}
+
+.menuButton a:hover, .menuButton a:hover:active{
+    background-color: #A40000;
+    color: #FFC700;
+}
+
+.menuButton{
+    transition: 0.2s;
+    margin-top: 3em;
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.menuButton a{
+    justify-content: center;
+    display: block;
+    padding: 0.7em;
+    width: 20%;
+    border-radius: 5em;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.7em;
+    color: black;
+    margin: auto;
+    font-family: 'Lateef', serif;
+}
+
+.promotionBanner{
+    transition: 0.2s;
+    margin-top: 12em;
+    background-color: #01033A;
+    display: flex;
+    flex-direction: column;
+}
+
+.titlePromo{
+    font-family: 'Kalam', cursive;
+    color: #FFF500;
+    text-align: center;
+    font-size: 800%;
+    margin-top: 6%;
+}
+
+.imagesPromo{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.porkShoyuRamen img{
+    width: 125%;
+    margin-left: -15%;
+    margin-top: -10%;
+}
+
+.tantanRamen{
+    margin-top: -8%;
+}
+
+.descPromo{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    font-size: 2em;
+}
+
+.descPromo p{
+    font-family: 'Kameron', serif;
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    line-height: 150%;
+}
+
+
+.discoverMore{
+    transition: 0.2s;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.discoverMore a:hover,.discoverMore a:active{
+    background-color: #FFF500;
+    color: white;
+}
+
+.discoverMore a{
+    font-family: 'Kaisei Decol', serif;
+    display: block;
+    padding: 2%;
+    width: 20%;
+    border-radius: 5em;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.3em;
+    color: black;
+    margin: auto;
+}
+
+.news{
+    transition: 0.2s;
+}
+
+.titleNews h2{
+    font-family: 'Langar', cursive;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 10%;
+}
+
+.titleNews h3{
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.newsImages {
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+}
+
+.restaurantRamen{
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.restaurantRamen img {
+    overflow: hidden;
+    width: 60%;
+    height: 76%;
+}
+
+.restaurantRamen h3{
+    width: 50%;
+}
+
+.chefRecomended img {
+    width: 90%;
+}
+
+.chefRecomended{
+    margin-left: -30%;
+}
+
+.newsImages h3{
+    font-family: 'Lexend', sans-serif;
+    margin-top: 0.8em;
+    color: white;
+    font-size: 2.5em;
+}
+
+footer {
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 0.2s;
+    margin-top: 15%;
+    height: 30em;
+    background-color: #450B0B;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5sem;
+    gap: 12%;
+}
+
+.leftFooter {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.leftFooter h3 {
+    font-family: 'Mate SC', serif;
+    color: white;
+    font-size: 5em;
+}
+
+.icon {
+    margin-top: 13%;
+    gap: 5%;
+}
+
+.icon .desc {
+    margin-bottom: 7%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.leftFooter h4 {
+    color: white;
+    font-size: 2.4em;
+}
+
+.centerFooter {
+    margin-top: 5.5%;
+}
+
+.centerFooter .title {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 10%;
+    font-size: 3em;
+    color: white;
+}
+
+.listlinks {
+    font-family: 'Mate SC', serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+    gap: 2em;
+    font-size: 2em;
+    line-height: 170%;
+}
+
+.listlinks li {
+    font-family: 'Mate SC', serif;
+    list-style: none;
+}
+
+.listlinks li:hover, .listlinks li:active{
+    color: white;
+}
+
+.rightFooter {
+    margin-top: 15%;
+}
+
+.rightFooter .title {
+    font-size: 2em;
+    color: white;
+}
+
+.rightFooter .button {
+    margin-left: 3%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 9%;
+}
+
+.rightFooter .button .text h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+
+.rightFooter .button .text {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.rightFooter .button .email h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .email {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.rightFooter .button .text h4:hover, .rightFooter .button .email h4:hover, .rightFooter .button .text h4:active, .rightFooter .button .email h4:active {
+    color: #FFC700;
+    background-color: black;
+}
+
+.icons {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+/* Phone */
+@media screen and  (max-width: 768px){
+    header {
+        position: static;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 0.8em;
+    }
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #0F1416;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+    #navbar:checked ~ nav {
+        left: 0;
+    }
+   
+    nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+
+    .dropdown {
+        display: block;
+    }
+
+    .featuredRamenPic{
+        margin-left: 2em;
+    }
+
+    .bestRamen{
+        margin-top: 20%;
+    }
+
+    .bestRamen h1{
+        font-size: 1.5em;
+    }
+
+    .featuredRamen{
+        margin-top:15%
+    }
+
+    .featuredRamen h2{
+        font-size: 200%;
+        letter-spacing: 0;
+    }
+
+    .featuredRamenPic h2{
+        font-size: 1em;
+    }
+
+    .featuredRamenPic{
+        margin-top:15%;
+    }
+
+    .featuredRamen h3{
+        font-size: 1em;
+    }
+
+    .porkShoyu{
+        overflow: hidden;
+        margin-left: -3em;
+        margin-right: 1em;
+    }
+
+    .porkShoyu img{
+        width: 140%;
+        margin-left: -12%
+    }
+
+    .porkShoyu h2{
+        margin-top: -8%;
+    }
+
+    .menuButton{
+        text-align: center;
+        padding: 10px;
+        font-size: 150%;
+    }
+
+    .menuButton a{
+        width: 50%;
+    }
+
+    
+    .titlePromo{
+        color: #FFF500;
+        text-align: center;
+        font-size: 2em;
+        margin-top: 6%;
+    }
+    
+    .imagesPromo{
+        margin-left: -1em;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tonkotsuRamen img{
+        width: 90%;
+    }
+
+    .tantanRamen img{
+        width: 100%;
+        margin-left: -0.5em;
+    }
+
+    .porkShoyuRamen img{
+        width: 118%;
+    }
+
+    .titleDesc{
+        font-size: 0.45em;
+    }
+
+    .descPromo p{
+        font-size: 0.3em;
+        line-height: 150%;
+    }
+
+    .discoverMore{
+        margin-top: 10%;
+        padding: 1%;
+        height: 1%;
+        margin-bottom: 20%;
+        padding: 10px;
+    }
+
+    .discoverMore a{
+        padding: 10px;
+        width: 50%;
+        font-size: 70%;
+    }
+
+    .titleNews{
+        font-size: 0.5em;
+    }
+
+    .restaurantRamen img{
+        height: 67%;
+    }
+
+    .newsImages h3{
+        font-size: 0.6em;
+    }
+
+    footer {
+        padding: 4%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+
+    .leftFooter h3 {
+        font-size: 2em;
+    }
+
+    .leftFooter h4 {
+        font-size: 2em;
+    }
+
+    .centerFooter h3 {
+        font-size: 0.4em;
+    }
+
+    .centerFooter {
+        margin-left: 5%;
+    }
+
+    .listlinks li {
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3 {
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter,
+    .leftFooter,
+    .centerFooter {
+        overflow: hidden;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 20%;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+
+    .rightFooter .button {
+        width: 10em;
+        margin-left: 5%;
+    }
+
+    .icons {
+        margin-left: 3%;
+        font-size: 125%;
+    }
+}
+
+
+@media screen and  (min-width: 768px) and (max-width:1620px){
+
+    nav ul li a{
+        font-size: 1.3em;
+    }
+
+    .featuredRamen h2{
+        font-size: 2em;
+    }
+
+    .featuredRamen h3{
+        font-size: 4em;
+    }
+
+    .featuredRamen{
+        margin-left: -3em;
+    }
+
+    .porkShoyu img{
+        width: 130%;
+        margin-left: -8%;
+    }
+
+    .porkShoyu{
+        overflow: hidden;
+        margin-left: -30%;
+    }
+
+    .porkShoyu h2{
+        margin-top: -10%;
+    }
+
+    .menuButton{
+        font-size: 1.8em;
+    }
+
+    .titlePromo{
+        font-size: 3em;
+    }
+
+    .tonkotsuRamen img{
+        width: 90%;
+    }
+
+    .tantanRamen img{
+        width: 100%;
+        margin-left: -0.5em;
+    }
+
+    .porkShoyuRamen img{
+        width: 118%;
+    }
+
+    .titleDesc{
+        font-size: 0.8em;
+    }
+
+    .descPromo p{
+        font-size: 0.7em;
+        line-height: 150%;
+    }
+
+    .discoverMore a{
+        font-size: 1.5em;
+    }
+
+    .newsImages{
+        margin-top: -15%;
+    }
+
+    .restaurantRamen img{
+        height: 68%;
+    }
+
+    .newsImages h3{
+        font-size: 1.5em;
+    }
+
+
+
+    .leftFooter h3{
+        font-size: 2em;
+    }
+    
+    .leftFooter h4{
+        font-size: 2em;
+    }
+
+    .centerFooter h3{
+        font-size: 0.4em;
+    }
+
+    .listlinks li{
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3{
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter, .leftFooter, .centerFooter{
+        overflow: hidden;
+    }
+
+    .rightFooter{
+        margin-top: 10%;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 8%;
+        flex-direction: row;   
+        margin: auto;
+    }
+
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+    
+
+    footer{
+        height: 20em;
+        overflow: hidden;
+    }
+
+    .icons{
+        margin-left: 3%;
+        font-size: 150%;
+    }
+    
+}
+

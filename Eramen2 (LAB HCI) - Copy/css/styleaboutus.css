@@ -1,0 +1,804 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0F1416;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background: #A40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.title a {
+    text-decoration: none;
+    color: #FFC700;
+    font-size: 4em;
+}
+
+nav .logo {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 3;
+}
+
+nav ul li a {
+    color: #FFC700;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-size: 2em;
+}
+
+
+nav ul li a:hover {
+    background: black;
+}
+
+nav ul li a.active {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.dropdown:hover {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background: #A40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.title a {
+    text-decoration: none;
+    color: #FFC700;
+    font-size: 4em;
+    font-family: 'Mate SC', serif;
+
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li a {
+    font-family: 'Karma', serif;
+    color: #FFC700;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-size: 2em;
+}
+
+
+nav ul li a:hover {
+    background: black;
+}
+
+nav ul li a.active {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.dropdown:hover {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+footer {
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 0.2s;
+    margin-top: 15%;
+    height: 30em;
+    background-color: #450B0B;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5sem;
+    gap: 12%;
+}
+
+.leftFooter {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.leftFooter h3 {
+    font-family: 'Mate SC', serif;
+    color: white;
+    font-size: 5em;
+}
+
+.icon {
+    margin-top: 13%;
+    gap: 5%;
+}
+
+.icon .desc {
+    margin-bottom: 7%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.leftFooter h4 {
+    color: white;
+    font-size: 2.4em;
+}
+
+.centerFooter {
+    margin-top: 5.5%;
+}
+
+.centerFooter .title {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 10%;
+    font-size: 3em;
+    color: white;
+}
+
+.listlinks {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+    gap: 3em;
+    font-size: 2em;
+    line-height: 170%;
+}
+
+.listlinks li {
+    font-family: mate;
+    list-style: none;
+}
+
+.listlinks li:hover,
+.listlinks li:active {
+    color: white;
+}
+
+.rightFooter {
+    margin-top: 15%;
+}
+
+.rightFooter .title {
+    font-size: 2em;
+    color: white;
+}
+
+.rightFooter .button {
+    margin-left: 3%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 9%;
+}
+
+.rightFooter .button .text h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .text {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.rightFooter .button .email h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .email {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.icons {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.rightFooter .button .text h4:hover,
+.rightFooter .button .email h4:hover,
+.rightFooter .button .text h4:active,
+.rightFooter .button .email h4:active {
+    color: #FFC700;
+    background-color: black;
+}
+
+.aboutUsImage {
+    font-family: 'Kiwi Maru', serif;
+    transition: 0.2s;
+    margin-top: 15%;
+}
+
+.aboutUsImage .title {
+    font-family: 'Kiwi Maru', serif;
+    text-align: center;
+    color: #A40000;
+    font-size: 300%;
+    margin-bottom: 8%;
+}
+
+.aboutUsImage .aboutusimages img {
+    margin: auto;
+    width: 100%;
+}
+
+.aboutUsData {
+    transition: 0.2s;
+    background-color: antiquewhite;
+    padding: 5%;
+}
+
+.titleData h2 {
+    text-align: center;
+    font-size: 600%;
+    color: burlywood;
+}
+
+.titleData {
+    margin-bottom: 7%;
+}
+
+.visimisi {
+    color: burlywood;
+    font-family: 'Kite One', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-bottom: 10%;
+}
+
+.visimisi h3 {
+    font-size: 300%;
+}
+
+.visimisi p {
+    font-size: 190%;
+}
+
+.historytitle h2 {
+    font-family: 'Kite One', sans-serif;
+    text-align: center;
+    font-size: 300%;
+    color: burlywood;
+}
+
+.historybody p {
+    overflow: hidden;
+    color: burlywood;
+    font-family: 'Kite One', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    line-height: 1.3em;
+    padding: 3%;
+}
+
+.historybody {
+    margin-bottom: 8%;
+}
+
+.girl1image img {
+    transition: 0.2s;
+    width: 120%;
+}
+
+.girl2image img {
+    width: 107%;
+}
+
+.historyimages {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+
+.aboutUsData {
+    margin-bottom: 15%;
+}
+
+.ramenimages {
+    transition: 0.2s;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5%;
+    gap: 5%;
+}
+
+.ramen1 {
+    width: 30%;
+}
+
+.ramen2 {
+    width: 30%;
+}
+
+.ramen3 {
+    width: 30%;
+}
+
+.maps {
+    transition: 0.2s;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps h1 {
+    text-align: center;
+    font-size: 300%;
+    color: #A40000;
+    font-family: 'Kiwi Maru', serif;
+    margin-bottom: 2%;
+    margin-left: 7%;
+}
+
+.toko1,
+.toko2,
+.toko3 {
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    background: antiquewhite;
+    padding: 5%;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.keterangantoko1,
+.keterangantoko2,
+.keterangantoko3 {
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.imagetoko1 {
+    overflow: hidden;
+}
+
+.imagetoko1 img {
+    width: 90%;
+    height: 110%;
+}
+
+.imagetoko2 img {
+    width: 90%;
+}
+
+.imagetoko3 img {
+    width: 89%;
+    height: 88%;
+}
+
+iframe {
+    width: 60em;
+    height: 15em;
+}
+
+.toko2 iframe {
+    width: 50em;
+}
+
+.toko3 iframe {
+    width: 70em;
+}
+
+.maps h3 {
+    font-size: 3em;
+}
+
+.namaalamattoko3,
+.namaalamattoko2,
+.namaalamattoko1 {
+    padding: 3%;
+    margin-top: 7%;
+    background-color: white;
+}
+
+.namaalamattoko3 h3,
+.namaalamattoko2 h3,
+.namaalamattoko1 h3 {
+    color: burlywood;
+    font-family: 'Kite One', sans-serif;
+}
+
+.namaalamattoko3 p,
+.namaalamattoko2 p,
+.namaalamattoko1 p {
+    margin-top: 5%;
+    color: black;
+    font-family: 'Kite One', sans-serif;
+}
+
+
+
+/* Phone */
+@media screen and (max-width: 768px) {
+    header {
+        position: static;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 0.8em;
+    }
+
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #0F1416;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    #navbar:checked~nav {
+        left: 0;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    footer {
+        padding: 4%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+
+    .leftFooter h3 {
+        font-size: 2em;
+    }
+
+    .leftFooter h4 {
+        font-size: 2em;
+    }
+
+    .centerFooter h3 {
+        font-size: 0.4em;
+    }
+
+    .centerFooter {
+        margin-left: 5%;
+    }
+
+    .listlinks li {
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3 {
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter,
+    .leftFooter,
+    .centerFooter {
+        overflow: hidden;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 20%;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+
+    .rightFooter .button {
+        width: 10em;
+        margin-left: 5%;
+    }
+
+    .icons {
+        margin-left: 3%;
+        font-size: 125%;
+    }
+
+    .aboutUsImage {
+        margin-top: 15%;
+    }
+
+    .aboutUsImage .title {
+        font-size: 150%;
+    }
+
+    .titleData h2 {
+        font-size: 150%;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .visimisi {
+        margin-top: 30%;
+    }
+
+    .visimisi h3 {
+        font-size: 150%;
+    }
+
+    .visimisi p {
+        font-size: 100%;
+    }
+
+    .historytitle h2 {
+        font-size: 150%;
+    }
+
+    .historybody p {
+        font-size: 100%;
+    }
+
+    .toko1,
+    .toko2,
+    .toko3 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30%;
+    }
+
+    iframe {
+        width: 25.5em;
+        height: 15em;
+    }
+
+    .maps h1 {
+        font-size: 150%;
+    }
+
+    .toko1,
+    .toko2,
+    .toko3 {
+        gap: 2em;
+    }
+
+    .imagetoko1 img {
+        width: 98%;
+        height: 110%;
+    }
+
+    .imagetoko2 img {
+        width: 100%;
+    }
+
+    .imagetoko3 img {
+        width: 99%;
+        height: 88%;
+    }
+
+    .maps h3 {
+        font-size: 1em;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1620px) {
+    nav ul li a {
+        font-size: 1.3em;
+    }
+
+    .leftFooter h3 {
+        font-size: 2em;
+    }
+
+    .leftFooter h4 {
+        font-size: 2em;
+    }
+
+    .centerFooter h3 {
+        font-size: 0.4em;
+    }
+
+    .listlinks li {
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3 {
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter,
+    .leftFooter,
+    .centerFooter {
+        overflow: hidden;
+    }
+
+    .rightFooter {
+        margin-top: 10%;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 8%;
+        flex-direction: row;
+        margin: auto;
+    }
+
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+
+    footer {
+        height: 20em;
+        overflow: hidden;
+    }
+
+    .icons {
+        margin-left: 3%;
+        font-size: 150%;
+    }
+
+    .aboutUsImage {
+        margin-top: 20%;
+    }
+
+    .aboutUsImage .title {
+        font-size: 200%;
+    }
+
+    .titleData h2 {
+        font-size: 350%;
+
+    }
+
+    .visimisi {
+        margin-top: 15%;
+    }
+
+    .visimisi p {
+        font-size: 125%;
+    }
+
+    .visimisi h3 {
+        font-size: 200%;
+    }
+
+    .historytitle h2 {
+        font-size: 200%;
+    }
+
+    .historybody p {
+        font-size: 150%;
+    }
+
+
+    .maps h3 {
+        font-size: 2em;
+    }
+
+}

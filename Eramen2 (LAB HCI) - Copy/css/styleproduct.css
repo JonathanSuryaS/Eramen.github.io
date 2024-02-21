@@ -1,0 +1,743 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0F1416;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background: #A40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.title a{
+    text-decoration: none;
+    color: #FFC700;
+    font-size: 4em;
+    font-family: 'Mate SC', serif;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    font-family: 'Karma', serif;
+    color: #FFC700;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-size: 2em;
+}
+
+
+nav ul li a:hover {
+    background: black;
+}
+nav ul li a.active {
+    color:white;
+    background-color: #FFC700;
+}
+.dropdown {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.dropdown:hover {
+    color: white;
+    background-color: #FFC700;
+}
+.dropdown .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+footer {
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 0.2s;
+    margin-top: 15%;
+    height: 30em;
+    background-color: #450B0B;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5sem;
+    gap: 12%;
+}
+
+.leftFooter {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.leftFooter h3 {
+    font-family: 'Mate SC', serif;
+    color: white;
+    font-size: 5em;
+}
+
+.icon {
+    margin-top: 13%;
+    gap: 5%;
+}
+
+.icon .desc {
+    margin-bottom: 7%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.leftFooter h4 {
+    color: white;
+    font-size: 2.4em;
+}
+
+.centerFooter {
+    margin-top: 5.5%;
+}
+
+.centerFooter .title {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 10%;
+    font-size: 3em;
+    color: white;
+}
+
+.listlinks {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+    gap: 2em;
+    font-size: 2em;
+    line-height: 170%;
+}
+
+.listlinks li {
+    font-family: 'Mate SC', serif;
+    list-style: none;
+}
+
+.listlinks li:hover, .listlinks li:active{
+    color: white;
+}
+
+.rightFooter {
+    margin-top: 15%;
+}
+
+.rightFooter .title {
+    font-size: 2em;
+    color: white;
+}
+
+.rightFooter .button {
+    margin-left: 3%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 9%;
+}
+
+.rightFooter .button .text h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .text {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.rightFooter .button .email h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .email {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.icons {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.rightFooter .button .text h4:hover, .rightFooter .button .email h4:hover, .rightFooter .button .text h4:active, .rightFooter .button .email h4:active {
+    color: #FFC700;
+    background-color: black;
+}
+
+.baris1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.baris2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.baris3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.tab {
+    font-family: 'Kadwa', serif;
+    background-color: hsl(43, 100%, 84%);
+    width: 28%;
+    padding: 4%;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px grey;
+    height: 700%;
+    margin-bottom: 5%;
+    transition: 0.2s;
+}
+
+.ramen{
+    transition: 0.2s;
+    margin-top: 15%;
+}
+
+
+h1 {
+    text-align: left;
+    font-size: 450%;
+    color: #FFC700;
+    margin-left: 7%;
+    font-family: 'Kadwa', serif;
+}
+
+
+
+.container {
+    transition: 0.2s;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.baris1,
+.baris2,
+baris3 {
+    transition: 0.2s;
+    gap: 5%;
+    margin-bottom: 4%;
+}
+
+
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.misoRamen img{
+    margin-top: -20%;
+    width: 90%;
+}
+
+.misoRamen .price{
+    margin-top: 25%;
+}
+
+.shioRamen img{
+    width: 100%;
+    margin-top: -15%;
+    margin-bottom: 10%;
+}
+
+.shioRamen .price{
+    margin-top: 8%;
+}
+
+.porkshoyuRamen img{
+    width: 160%;
+    margin-left: -24%;
+    margin-top: -10%;
+}
+
+.porkshoyuRamen .price{
+    margin-top: 3%;
+}
+
+.tonkotsuRamen img{
+    width: 130%;
+    margin-left: -10%;
+    margin-bottom: 10%;
+}
+
+.tonkotsuRamen .price{
+    margin-top: 6%;
+}
+
+.chickenRamen img{
+    width: 100%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+}
+
+.chickenRamen .price{
+    margin-top: 23%;
+    margin-bottom: 3%;
+}
+
+.tantanRamen img{
+    margin-top: -40%;
+    width: 100%;
+}
+
+.tantanRamen .price{
+    margin-top: 24%;
+}
+
+.shoyuveggieRamen img{
+    margin-top: -15%;
+    width: 90%;
+}
+
+.gyoza img{
+    width: 130%;
+    margin-left: -13%;
+    margin-bottom: 10%;
+}
+
+.gyoza .price{
+    margin-top: 23%;
+}
+
+.takoyaki img{
+    width: 100%;
+    margin-top: -25%;
+}
+
+.takoyaki .price{
+    margin-top: 10%;
+}
+
+.karage img{
+    width: 130%;
+    margin-left: -10%;
+    margin-bottom: 15%;
+}
+
+.karage .price{
+    margin-top: 27%;
+}
+
+.tempura img{
+    width: 150%;
+    margin-top: -10%;
+    margin-left: -25%;
+    margin-bottom: 10%;
+}
+
+.tempura .price{
+    margin-top: 15%;
+}
+
+.ocha img{
+    width: 150%;
+    margin-top: 10%;
+    margin-left: -25%;
+    margin-bottom: 10%;
+}
+
+.ocha .price{
+    margin-top: 22%;
+}
+
+.airmineral img{
+    width: 130%;
+    margin-left: -15%;
+    margin-top: -20%;
+    margin-bottom: -8%;
+}
+
+.airmineral .price{
+    margin-top: 25%;
+}
+
+.sake img{
+    width: 60%;
+    margin-bottom: 20%;
+}
+
+.sake .price{
+    margin-top: 20%;
+}
+
+.icelemontea img{
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 150%;
+    color: #AD7508;
+}
+
+.tab p{
+    transition: 0.2s;
+    text-align: justify;
+    color: #AD7508;
+    margin-top: 4%;
+    line-height: 180%;
+    margin-bottom: 10%;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.price{
+    margin-top: 30%;
+    border-radius: 10px;
+    background-color: #5A1C01;
+    width: 100%;
+    justify-items: center;
+    margin: auto;
+}
+
+.price p{
+    color: #FFB800;
+    font-size: 180%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.icons {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+
+
+
+/* Phone */
+@media screen and  (max-width: 768px){
+    header {
+        position: static;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 0.8em;
+    }
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #0F1416;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+    #nav_check:checked ~ nav {
+        left: 0;
+    }
+   
+    nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+
+    footer {
+        padding: 4%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+
+    .leftFooter h3 {
+        font-size: 2em;
+    }
+
+    .leftFooter h4 {
+        font-size: 2em;
+    }
+
+    .centerFooter h3 {
+        font-size: 0.4em;
+    }
+
+    .centerFooter {
+        margin-left: 5%;
+    }
+
+    .listlinks li {
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3 {
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter,
+    .leftFooter,
+    .centerFooter {
+        overflow: hidden;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 20%;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+
+    .rightFooter .button {
+        width: 10em;
+        margin-left: 5%;
+    }
+
+    .icons {
+        margin-left: 3%;
+        font-size: 125%;
+    }
+
+    .tab{
+        width: 40%;
+    }
+
+    
+
+    .tab h2{
+        font-size: 60%;
+    }
+
+
+    .tab p{
+        font-size: 50%;
+    }
+
+    .ramen{
+        margin-top: 10%;
+    }
+    .ramen .price, .sideDish .price{
+        margin-top: 20%;
+    }
+    
+    h1{
+        font-size: 1em;
+    }
+
+    .leftFooter h3{
+        font-size: 2em;
+    }
+    
+    .leftFooter h4{
+        font-size: 2em;
+    }
+
+    .centerFooter h3{
+        font-size: 0.4em;
+    }
+
+    .centerFooter{
+        margin-left: 5%;
+    }
+
+    .listlinks li{
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3{
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter, .leftFooter, .centerFooter{
+        overflow: hidden;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 20%;
+        flex-direction: row;   
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+    
+
+    .rightFooter .button{
+        width: 10em;
+        margin-left: 5%;
+    }
+
+    .icons{
+        margin-left: 3%;
+        font-size: 125%;
+    }
+
+
+}
+
+@media screen and  (min-width: 768px) and (max-width:1620px){
+    nav ul li a{
+        font-size: 1.3em;
+    }
+
+    .leftFooter h3{
+        font-size: 2em;
+    }
+    
+    .leftFooter h4{
+        font-size: 2em;
+    }
+
+    .centerFooter h3{
+        font-size: 0.4em;
+    }
+
+    .listlinks li{
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3{
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter, .leftFooter, .centerFooter{
+        overflow: hidden;
+    }
+
+    .rightFooter{
+        margin-top: 10%;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 8%;
+        flex-direction: row;   
+        margin: auto;
+    }
+
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+    
+
+    footer{
+        height: 20em;
+        overflow: hidden;
+    }
+
+    .tab{
+        width: 40%;
+    }
+
+    .icons{
+        margin-left: 3%;
+        font-size: 150%;
+    }
+
+
+}

@@ -1,0 +1,937 @@
+/* Desktop */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0F1416;
+    overflow-x: hidden;
+    font-family: 'Kiwi Maru', serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background: #A40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.title a {
+    text-decoration: none;
+    color: #FFC700;
+    font-size: 4em;
+}
+
+
+nav .logo {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 3;
+}
+
+nav ul li a {
+    color: #FFC700;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-size: 2em;
+}
+
+
+nav ul li a:hover {
+    background: black;
+}
+
+nav ul li a.active {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.dropdown:hover {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background: #A40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.title a {
+    text-decoration: none;
+    color: #FFC700;
+    font-size: 4em;
+    font-family: 'Mate SC', serif;
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    font-family: 'Karma', serif;
+    color: #FFC700;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-size: 2em;
+}
+
+
+nav ul li a:hover {
+    background: black;
+}
+
+nav ul li a.active {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.dropdown:hover {
+    color: white;
+    background-color: #FFC700;
+}
+
+.dropdown .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+footer {
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 0.2s;
+    margin-top: 15%;
+    height: 30em;
+    background-color: #450B0B;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5sem;
+    gap: 12%;
+}
+
+.leftFooter {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.leftFooter h3 {
+    font-family: 'Mate SC', serif;
+    color: white;
+    font-size: 5em;
+}
+
+.icon {
+    margin-top: 13%;
+    gap: 5%;
+}
+
+.icon .desc {
+    margin-bottom: 7%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.leftFooter h4 {
+    color: white;
+    font-size: 2.4em;
+}
+
+.centerFooter {
+    margin-top: 5.5%;
+}
+
+.centerFooter .title {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 10%;
+    font-size: 3em;
+    color: white;
+}
+
+.listlinks {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+    gap: 2em;
+    font-size: 2em;
+    line-height: 170%;
+}
+
+
+
+.listlinks li {
+    font-family: 'Mate SC', serif;
+    list-style: none;
+}
+
+.listlinks li:hover, .listlinks li:active{
+    color: white;
+}
+
+.rightFooter {
+    margin-top: 15%;
+}
+
+.rightFooter .title {
+    font-size: 2em;
+    color: white;
+}
+
+.rightFooter .button {
+    margin-left: 3%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 9%;
+}
+
+.rightFooter .button .text h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .text {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.rightFooter .button .email h4 {
+    color: white;
+    font-size: 1.7em;
+    padding: 10%;
+}
+
+.rightFooter .button .email {
+    background-color: #A01414;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.icons {
+    color: white;
+    font-size: 300%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.rightFooter .button .text h4:hover, .rightFooter .button .email h4:hover, .rightFooter .button .text h4:active, .rightFooter .button .email h4:active {
+    color: #FFC700;
+    background-color: black;
+}
+
+.getintouch {
+    border-radius: 50px;
+    margin-top: 15%;
+    background-color: #5B0000;
+    padding: 5%;
+    transition: 0.2s;
+}
+
+.getintouchTitle {
+    text-align: center;
+    font-size: 300%;
+    color: white;
+}
+
+.getintouchbody {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: -23%;
+}
+
+.addressicon p,
+.contacticon p {
+    font-size: 800%;
+    color: white;
+}
+
+.getintouchbody h2 {
+    color: white;
+    font-size: 250%;
+    margin-bottom: 4%;
+}
+
+.addressdesc p {
+    margin: auto;
+    color: white;
+    width: 50%;
+    font-size: 150%;
+    line-height: 170%;
+}
+
+.contactdesc li {
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    margin-top: 5%;
+}
+
+
+.messageUs {
+    transition: 0.2s;
+    border-radius: 50px;
+    margin-top: 15%;
+    background-color: #5B0000;
+    padding: 4%;
+}
+
+.messageUsTitle {
+    color: white;
+    font-size: 300%;
+    margin-bottom: 5%;
+}
+
+.messageUsTitle h1 {
+    text-align: center;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+
+label {
+    font-size: 300%;
+}
+
+input {
+    font-family: 'Kiwi Maru', serif;
+    border-radius: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10%;
+    font-size: 200%;
+    color: black;
+}
+
+.inputBox {
+    width: 90%;
+}
+
+.messageBox {
+    width: 90%;
+}
+
+textarea {
+    font-family: 'Kiwi Maru', serif;
+    border-radius: 30px;
+    margin-top: 10%;
+    resize: none;
+    font-size: 200%;
+    padding: 5%;
+    color: black;
+}
+
+.preferenceTitle h3 {
+    margin-top: 15%;
+    text-align: left;
+    color: white;
+    font-size: 400%;
+}
+
+.choice {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    gap: 19%;
+    margin-left: -9%;
+}
+
+.dryramenImage img {
+    margin-top: 3%;
+    width: 50%;
+    margin-bottom: 7.3%;
+}
+
+.dryramen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ramen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ramenImage img {
+    width: 70%;
+}
+
+.agree label {
+    text-align: center;
+}
+
+.ramentitle {
+    margin-top: -3%;
+}
+
+.submitButton {
+    align-items: center;
+}
+
+.dryramenbutton,
+.ramenbutton {
+    overflow: hidden;
+    margin-bottom: 4%;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    gap: 2%;
+    margin-left: -8%;
+}
+
+.newsletter input {
+    margin: 0;
+    transform: scale(3);
+}
+
+.newsletter p {
+    font-size: 350%;
+    color: white;
+}
+
+.agree {
+    transform: scale(1);
+}
+
+.ramenRadio {
+    transform: scale(3);
+    margin: 10%;
+}
+
+
+.choice h4 {
+    color: white;
+    font-size: 250%;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+.submitButtons {
+    margin-top: 10%;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 2%;
+    color: black;
+    font-size: 300%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#error{
+    margin-top: 5%;
+    color: #FFC700;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        position: static;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 0.8em;
+    }
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #0F1416;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+    #navbar:checked ~ nav {
+        left: 0;
+    }
+   
+    nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    .dropdown {
+        display: block;
+    }
+
+
+    footer {
+        padding: 4%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+
+    .leftFooter h3 {
+        font-size: 2em;
+    }
+
+    .leftFooter h4 {
+        font-size: 2em;
+    }
+
+    .centerFooter h3 {
+        font-size: 0.4em;
+    }
+
+    .centerFooter {
+        margin-left: 5%;
+    }
+
+    .listlinks li {
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3 {
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter,
+    .leftFooter,
+    .centerFooter {
+        overflow: hidden;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 20%;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+
+    .rightFooter .button {
+        width: 10em;
+        margin-left: 5%;
+    }
+
+    .icons {
+        margin-left: 3%;
+        font-size: 125%;
+    }
+
+    .getintouch {
+        padding:8.5%;
+        margin-top: 20%;
+    }
+
+    .getintouchTitle {
+        font-size: 100%;
+    }
+
+    .addressicon p,
+    .contacticon p {
+        font-size: 200%;
+        color: white;
+    }
+
+    .getintouchbody, .addressdesc p, .contactdesc li{
+        font-size: 70%;
+    }
+
+    .getintouchbody h2{
+        font-size: 100%;
+    }
+
+    .getintouchbody{
+        margin-left: -25%;
+    }
+
+    .messageUs{
+        padding: 9%;
+    }
+
+    .messageUsTitle{
+        font-size: 100%;
+    }
+
+    input, textarea{
+        font-size: 100%;
+        padding: 10%;
+    }
+
+    .preferenceTitle h3{
+        font-size: 100%;
+    }
+
+    .dryramen, .ramen{
+        padding: 10%;
+    }
+
+    .dryramen img{
+        width: 100%;
+    }
+
+    .ramen img{
+        margin-left: -10%;
+        width: 120%;
+    }
+
+    .ramenRadio{
+        transform: scale(1);
+    }
+
+    .choice{
+        margin-top: 10%;
+        gap: 0.5%;
+    }
+
+    .choice h4{
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .submitButton{
+        font-size: 50%;
+    }
+
+    .newsletter{
+        padding: 20%;
+    }
+
+    .newsletter input{
+        transform: scale(2);
+    }
+
+    .newsletter p{
+        font-size: 100%;
+    }
+
+    #error{
+        font-size: 100%;
+    }
+}
+
+@media screen and  (min-width: 768px) and (max-width:1620px){
+    nav ul li a{
+        font-size: 1.3em;
+    }
+
+    .leftFooter h3{
+        font-size: 2em;
+    }
+    
+    .leftFooter h4{
+        font-size: 2em;
+    }
+
+    .centerFooter h3{
+        font-size: 0.4em;
+    }
+
+    .listlinks li{
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3{
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter, .leftFooter, .centerFooter{
+        overflow: hidden;
+    }
+
+    .rightFooter{
+        margin-top: 10%;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 8%;
+        flex-direction: row;   
+        margin: auto;
+    }
+
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+    
+
+    footer {
+        font-family: 'Lexend Deca', sans-serif;
+        margin-top: 40%;
+        height: 32em;
+        background-color: #450B0B;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+
+    .leftFooter h3{
+        font-family: 'Mate SC', serif;
+        font-size: 2em;
+    }
+    
+    .leftFooter h4{
+        font-size: 2em;
+    }
+
+    .centerFooter h3{
+        font-size: 0.4em;
+    }
+
+    .centerFooter{
+        margin-left: 5%;
+    }
+
+    .listlinks li{
+        font-size: 0.5em;
+        line-height: 200%;
+    }
+
+    .rightFooter h3{
+        font-size: 0.5em;
+        margin-left: 4%;
+    }
+
+    .rightFooter, .leftFooter, .centerFooter{
+        overflow: hidden;
+    }
+
+    .main-footer {
+        overflow: hidden;
+        gap: 20%;
+        flex-direction: row;   
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .rightFooter .button .text h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+
+    .rightFooter .button .email h4 {
+        color: white;
+        font-size: 0.5em;
+        padding: 20%;
+    }
+    
+
+    .rightFooter .button{
+        width: 10em;
+        margin-left: 5%;
+    }
+
+    .getintouch{
+        margin-top: 30%;
+        padding: 8%;
+    }
+    .getintouchTitle{
+        font-size: 150%;
+    }
+
+    .addressicon p,
+    .contacticon p {
+        font-size: 400%;
+    }
+
+    .getintouchbody h2{
+        font-size: 100%;
+    }
+
+    .getintouchbody, .addressdesc p, .contactdesc li{
+        font-size: 100%;
+    }
+
+    .getintouchbody{
+        margin-left: -25%;
+    }
+
+    .messageUs{
+        padding: 9%;
+    }
+
+    .messageUsTitle{
+        font-size: 200%;
+    }
+    input, textarea{
+        font-size: 150%;
+        padding: 5%;
+    }
+
+    .preferenceTitle h3{
+        font-size: 300%;
+    }
+
+    .dryramen, .ramen{
+        padding: 10%;
+    }
+
+    .dryramen img{
+        width: 100%;
+    }
+
+    .ramen img{
+        margin-left: -10%;
+        margin-bottom: 7%;
+        width: 120%;
+    }
+
+    .ramenRadio{
+        margin-top: 10%;
+        transform: scale(2);
+    }
+
+    .choice{
+        margin-top: 10%;
+        gap: 0.5%;
+    }
+
+    .choice h4{
+        text-align: center;
+        font-size: 140%;
+    }
+
+    .submitButton{
+        font-size: 70%;
+    }
+
+    .newsletter{
+        padding: 20%;
+        gap: 5%;
+    }
+    .newsletter input{
+        transform: scale(2);
+    }
+
+    .newsletter p{
+        font-size: 200%;
+    }
+}
